@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Astrology consultation by முனைவர். த. பழனி M.A. (Astro) with KP System, traditional astrology, and Bhrigu Nandi Nadi." />
+  <title>Astrology Consultation | முனைவர். த. பழனி</title>
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="/images/favicon-192.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{
+      --bg:#f7f8fc;
+      --bg-2:#eef4ff;
+      --surface:rgba(255,255,255,.9);
+      --surface-strong:rgba(255,255,255,.98);
+      --text:#183047;
+      --muted:#5f7184;
+      --gold:#d4a84f;
+      --gold-2:#f1cf82;
+      --line:rgba(24,48,71,.10);
+      --shadow:0 20px 50px rgba(24,48,71,.10);
+      --radius:26px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Poppins,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(212,168,79,.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(96,125,255,.10), transparent 22%),
+        linear-gradient(180deg, #f8fbff 0%, #f4f7fb 45%, #eef4ff 100%);
+      overflow-x:hidden;
+      line-height:1.7;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    button,input,textarea{font:inherit}
+
+    .container{
+      width:min(var(--max), calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(18px);
+      background:rgba(255,255,255,.84);
+      border-bottom:1px solid rgba(24,48,71,.08);
+    }
+
+    .topbar-inner{
+      width:min(var(--max), calc(100% - 32px));
+      margin:0 auto;
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+      padding:8px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+    .brand-mark{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg, rgba(212,168,79,.22), rgba(96,125,255,.14));
+      border:1px solid rgba(212,168,79,.18);
+      box-shadow:0 0 24px rgba(212,168,79,.12);
+      flex:none;
+    }
+    .brand-mark i{color:#9b7420}
+    .brand-text{min-width:0}
+    .brand-text strong{
+      display:block;
+      font-family:Cinzel, serif;
+      font-size:1.02rem;
+      letter-spacing:.4px;
+      line-height:1.2;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand-text span{
+      display:block;
+      color:var(--muted);
+      font-size:.83rem;
+      margin-top:2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .nav-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+      margin-left:auto;
+    }
+
+    .lang-switch{
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .lang-btn{
+      border:1px solid rgba(24,48,71,.08);
+      cursor:pointer;
+      min-height:42px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#fff;
+      color:var(--text);
+      font-weight:700;
+      transition:.2s ease;
+      box-shadow:0 10px 24px rgba(24,48,71,.08);
+    }
+    .lang-btn.active,
+    .lang-btn:hover{
+      background:var(--gold);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:46px;
+      padding:0 18px;
+      border-radius:999px;
+      border:1px solid transparent;
+      cursor:pointer;
+      font-weight:700;
+      transition:.25s ease;
+      box-shadow:0 12px 30px rgba(24,48,71,.10);
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--gold),var(--gold-2));
+      color:#fff;
+    }
+    .btn-secondary{
+      background:#fff;
+      color:var(--text);
+      border-color:rgba(24,48,71,.10);
+    }
+
+    .hero{
+      position:relative;
+      padding:56px 0 22px;
+    }
+    .hero-card{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:0;
+      min-height:72vh;
+      border-radius:34px;
+      overflow:hidden;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.70) 52%, rgba(255,255,255,.38) 100%),
+        url('images/astro-hero.jpg') center/cover no-repeat;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(24,48,71,.08);
+      position:relative;
+      isolation:isolate;
+    }
+    .hero-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(212,168,79,.12), transparent 18%),
+        radial-gradient(circle at 15% 70%, rgba(96,125,255,.08), transparent 18%);
+      pointer-events:none;
+      z-index:-1;
+    }
+
+    .hero-copy{
+      padding:54px;
+      display:flex;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(212,168,79,.16);
+      background:rgba(212,168,79,.10);
+      color:#8d6921;
+      font-size:.88rem;
+      margin-bottom:18px;
+      font-weight:700;
+      letter-spacing:.2px;
+      backdrop-filter:blur(10px);
+    }
+
+    .hero h1{
+      margin:0;
+      font-family:Cinzel, serif;
+      font-size:clamp(2.5rem,6vw,5.2rem);
+      line-height:1;
+      letter-spacing:.5px;
+      max-width:12ch;
+      color:#183047;
+      text-shadow:0 0 28px rgba(212,168,79,.10);
+    }
+    .hero .subtitle{
+      margin:16px 0 0;
+      color:#28435b;
+      font-size:clamp(1.04rem,2.2vw,1.28rem);
+      font-weight:600;
+      max-width:62ch;
+    }
+    .hero .description{
+      margin:16px 0 0;
+      color:var(--muted);
+      max-width:68ch;
+      line-height:1.85;
+      font-size:1rem;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:26px;
+    }
+
+    .hero-side{
+      padding:28px;
+      display:flex;
+      align-items:flex-end;
+      background:linear-gradient(180deg, rgba(255,255,255,.30), rgba(238,244,255,.92));
+      border-left:1px solid rgba(24,48,71,.08);
+    }
+
+    .side-panel{
+      width:100%;
+      padding:22px;
+      border-radius:24px;
+      background:rgba(255,255,255,.84);
+      border:1px solid rgba(24,48,71,.08);
+      backdrop-filter:blur(16px);
+      box-shadow:var(--shadow);
+    }
+    .side-panel h3{
+      margin:0 0 14px;
+      color:#8d6921;
+      font-size:1.05rem;
+    }
+    .side-panel p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+    .method-list{
+      display:grid;
+      gap:10px;
+      margin-top:14px;
+    }
+    .method-item{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding:12px 14px;
+      border-radius:16px;
+      background:rgba(212,168,79,.08);
+      border:1px solid rgba(212,168,79,.10);
+      color:var(--text);
+    }
+    .method-item i{
+      color:#9b7420;
+      margin-top:3px;
+      flex:none;
+    }
+
+    section.block{
+      padding:46px 0;
+    }
+
+    .section-head{
+      text-align:center;
+      width:min(860px,100%);
+      margin:0 auto 28px;
+    }
+    .section-head h2{
+      margin:0;
+      font-family:Cinzel, serif;
+      font-size:clamp(1.7rem,3vw,2.6rem);
+      letter-spacing:.3px;
+      line-height:1.15;
+      color:#183047;
+    }
+    .section-head p{
+      margin:14px auto 0;
+      color:var(--muted);
+      max-width:760px;
+      font-size:1rem;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(16px);
+    }
+    .card.pad{padding:24px}
+
+    .card h3{
+      margin:0 0 12px;
+      color:#8d6921;
+      font-size:1.18rem;
+    }
+    .card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.8;
+      font-size:.98rem;
+    }
+    .card p + p{margin-top:10px}
+
+    .service-card{
+      position:relative;
+      min-height:320px;
+      overflow:hidden;
+      border-radius:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.90));
+      border:1px solid rgba(24,48,71,.08);
+      box-shadow:var(--shadow);
+    }
+    .service-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:var(--bg-image);
+      background-size:cover;
+      background-position:center;
+      transform:scale(1.02);
+      filter:saturate(1.04);
+      transition:transform .6s ease;
+    }
+    .service-card:hover::before{
+      transform:scale(1.06);
+    }
+    .service-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.88));
+    }
+    .service-content{
+      position:relative;
+      z-index:1;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      height:100%;
+      min-height:320px;
+    }
+    .service-chip{
+      align-self:flex-start;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(24,48,71,.08);
+      color:#183047;
+      font-size:.8rem;
+      font-weight:700;
+      margin-bottom:10px;
+      backdrop-filter:blur(8px);
+    }
+    .service-content h3{
+      margin:0 0 8px;
+      color:#183047;
+      font-size:1.35rem;
+      line-height:1.25;
+      text-shadow:none;
+    }
+    .service-content p{
+      margin:0;
+      color:#49627a;
+      font-size:.96rem;
+    }
+
+    .highlight{
+      background:linear-gradient(135deg, #fff6de, #f7ecd1);
+      color:#34260b;
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:0 16px 40px rgba(24,48,71,.08);
+      border:1px solid rgba(212,168,79,.18);
+    }
+    .highlight h3{
+      margin:0 0 10px;
+      font-family:Cinzel, serif;
+      color:#8d6921;
+      font-size:1.4rem;
+    }
+    .highlight p{
+      margin:0;
+      color:#51401b;
+      font-size:.98rem;
+    }
+    .highlight ul{
+      margin:16px 0 0;
+      padding-left:18px;
+      color:#51401b;
+    }
+    .highlight li{margin:8px 0}
+
+    .horary-block{
+      position:relative;
+      overflow:hidden;
+      border-radius:var(--radius);
+      border:1px solid rgba(212,168,79,.18);
+      box-shadow:var(--shadow);
+      background:
+        linear-gradient(135deg, rgba(255,246,222,.24), rgba(247,236,209,.12)),
+        url('images/horary-bg.jpg') center/cover no-repeat;
+      margin-bottom:18px;
+      min-height:260px;
+    }
+    .horary-block::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.18));
+      pointer-events:none;
+    }
+    .horary-block .highlight-inner{
+      position:relative;
+      z-index:1;
+      padding:26px;
+      background:rgba(255,255,255,.52);
+      backdrop-filter:blur(10px);
+      border-radius:calc(var(--radius) - 6px);
+      margin:14px;
+      border:1px solid rgba(255,255,255,.38);
+    }
+    .horary-block .highlight-inner h3{
+      color:#6f4e16;
+      text-shadow:0 1px 0 rgba(255,255,255,.45);
+    }
+    .horary-block .highlight-inner p,
+    .horary-block .highlight-inner li{
+      color:#3b2c12;
+    }
+
+    .footer-contact{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .contact-card,
+    .map-card{
+      background:var(--surface-strong);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(16px);
+    }
+    .contact-card{padding:24px}
+    .contact-card h3{
+      margin:0 0 16px;
+      color:#8d6921;
+    }
+    .contact-row{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:12px 0;
+    }
+    .contact-row i{
+      color:#9b7420;
+      margin-top:4px;
+      width:18px;
+      flex:none;
+    }
+    .contact-row span,
+    .contact-row a{
+      color:var(--text);
+      font-weight:500;
+      word-break:break-word;
+    }
+
+    .map-card{
+      overflow:hidden;
+      min-height:360px;
+    }
+    .map-card iframe{
+      width:100%;
+      height:100%;
+      min-height:360px;
+      border:0;
+      display:block;
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#25d366,#1fb956);
+      color:#fff;
+      box-shadow:0 16px 35px rgba(37,211,102,.35);
+      z-index:999;
+      font-size:1.55rem;
+    }
+
+    .footer{
+      padding:24px 0 36px;
+      color:var(--muted);
+      text-align:center;
+      font-size:.95rem;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .75s ease, transform .75s ease;
+    }
+    .reveal.active{
+      opacity:1;
+      transform:none;
+    }
+
+    @media (max-width: 1120px){
+      .hero-card{
+        grid-template-columns:1fr;
+      }
+      .hero-side{
+        border-left:0;
+        border-top:1px solid rgba(24,48,71,.08);
+      }
+    }
+
+    @media (max-width: 980px){
+      .grid-2,
+      .grid-3,
+      .footer-contact{
+        grid-template-columns:1fr;
+      }
+      .hero-copy{padding:30px}
+      .service-card{min-height:300px}
+    }
+
+    @media (max-width: 760px){
+      .topbar-inner{
+        padding:10px 0;
+      }
+      .nav-actions{
+        width:100%;
+      }
+      .lang-switch{
+        width:100%;
+      }
+      .lang-btn{
+        flex:1 1 0;
+      }
+      .btn{
+        flex:1 1 0;
+      }
+      .hero{
+        padding:18px 0 12px;
+      }
+      .hero h1{
+        max-width:100%;
+      }
+      .hero-actions{
+        flex-direction:column;
+      }
+      .hero-actions .btn{
+        width:100%;
+      }
+      .section-head{
+        margin-bottom:22px;
+      }
+      .card.pad,
+      .contact-card,
+      .highlight,
+      .side-panel,
+      .horary-block .highlight-inner{
+        padding:18px;
+      }
+      .service-content{
+        padding:18px;
+      }
+      .map-card iframe{
+        min-height:300px;
+      }
+    }
+
+    @media (max-width: 420px){
+      .brand-mark{
+        width:40px;
+        height:40px;
+      }
+      .brand-text strong{
+        font-size:.96rem;
+      }
+      .brand-text span{
+        font-size:.76rem;
+      }
+      .hero h1{
+        font-size:clamp(2.1rem, 12vw, 3rem);
+      }
+      .section-head h2{
+        font-size:clamp(1.5rem, 8vw, 2.2rem);
+      }
+      .service-content h3{
+        font-size:1.18rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" aria-label="Back to clinic">
+      <div class="brand-mark"><i class="fa-solid fa-moon"></i></div>
+      <div class="brand-text">
+        <strong data-en="Astrology Consultation" data-ta="ஜோதிட ஆலோசனை">Astrology Consultation</strong>
+        <span data-en="T. Palani M.A. (Astro)" data-ta="முனைவர். த. பழனி M.A. (Astro)">T. Palani M.A. (Astro)</span>
+      </div>
+    </a>
+
+    <div class="nav-actions">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="ta" onclick="setLang('ta')">தமிழ்</button>
+      </div>
+      <a class="btn btn-secondary" href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span data-en="Back to Accupuncture" data-ta="மீண்டும் அக்குபஞ்சர் சிகிச்சைக்கு திரும்ப">Back to Accupuncture</span>
+      </a>
+      <a class="btn btn-primary" href="#contact">
+        <i class="fa-solid fa-phone"></i>
+        <span data-en="Book Consultation" data-ta="ஆலோசனை பதிவு">Book Consultation</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-card reveal">
+      <div class="hero-copy">
+        <div>
+          <div class="eyebrow" data-en="KP System • Traditional Astrology • Bhrigu Nandi Nadi" data-ta="KP SYSTEM • பாரம்பரிய ஜோதிடம் • பிருகு நந்தி நாடி">
+            KP System • Traditional Astrology • Bhrigu Nandi Nadi
+          </div>
+
+          <h1 data-en="T. Palani M.A. (ASTRO)" data-ta="முனைவர். த. பழனி M.A. (ASTRO)">T. Palani M.A. (ASTRO)</h1>
+
+          <p class="subtitle"
+             data-en="Accurate astrology guidance with clear timing, practical answers, and written horoscope analysis. This consultation will cover whether an event will happen, and if so, when it may happen."
+             data-ta="துல்லியமான ஜோதிட வழிகாட்டல், தெளிவான கால நிர்ணயம், நடைமுறை பதில்கள் மற்றும் எழுத்து வடிவ ஜாதக பகுப்பாய்வு. இந்த ஆலோசனையில் ஒரு நிகழ்வு நடைபெறுமா என்பதையும், நடைபெறுமானால் அது எப்போது நடைபெறும் என்பதையும் விளக்கப்படும்.">
+            Accurate astrology guidance with clear timing, practical answers, and written horoscope analysis. This consultation will cover whether an event will happen, and if so, when it may happen.
+          </p>
+
+          <p class="description"
+             data-en="This consultation covers whether an event will happen, when it may happen, and what direction is favorable in life. Education, job, job change, promotion, foreign travel, marriage, health, debt resolution, house, land, and vehicle timing can all be discussed."
+             data-ta="சம்பவம் நடைபெறுமா? நடைபெறும் எனில் எப்போது? கல்வி, வேலை, வேலை மாற்றம், உயர்வு, வெளிநாட்டு பயணம், திருமணம், நோய், கடன், மணை, வீடு, வாகனம் போன்ற வாழ்க்கை முக்கிய விஷயங்களுக்கு தெளிவான ஆலோசனை வழங்கப்படும்.">
+            This consultation covers whether an event will happen, when it may happen, and what direction is favorable in life. Education, job, job change, promotion, foreign travel, marriage, health, debt resolution, house, land, and vehicle timing can all be discussed.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/918940960728" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-en="WhatsApp" data-ta="வாட்ஸ்அப்">WhatsApp</span>
+            </a>
+            <a class="btn btn-secondary" href="#services">
+              <i class="fa-solid fa-compass"></i>
+              <span data-en="Explore Services" data-ta="சேவைகளைப் பார்க்க">Explore Services</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="side-panel">
+          <h3 data-en="Core methods" data-ta="முக்கிய முறைகள்">Core methods</h3>
+          <p data-en="KP System, traditional astrology, Bhrigu Nandi Nadi, and computer horoscope analysis."
+             data-ta="KP SYSTEM, பாரம்பரிய ஜோதிடம், பிருகு நந்தி நாடி முறை, மற்றும் கம்ப்யூட்டர் ஜாதக கணிப்பு.">
+            KP System, traditional astrology, Bhrigu Nandi Nadi, and computer horoscope analysis.
+          </p>
+
+          <div class="method-list">
+            <div class="method-item">
+              <i class="fa-solid fa-sparkles"></i>
+              <div data-en="Clear timing for events and outcomes" data-ta="நிகழ்வுகளுக்கான தெளிவான கால கணிப்பு">
+                Clear timing for events and outcomes
+              </div>
+            </div>
+            <div class="method-item">
+              <i class="fa-solid fa-book-open"></i>
+              <div data-en="Written horoscope analysis" data-ta="எழுதிய ஜாதக ஆய்வு">
+                Written horoscope analysis
+              </div>
+            </div>
+            <div class="method-item">
+              <i class="fa-solid fa-laptop"></i>
+              <div data-en="Computer horoscope reading" data-ta="கம்ப்யூட்டர் ஜாதக கணிப்பு">
+                Computer horoscope reading
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="About Astrology" data-ta="ஜோதிட சேவை பற்றி">About Astrology</span>
+      <h2 data-en="Balanced guidance for life decisions" data-ta="வாழ்க்கை முடிவுகளுக்கான சமநிலையான வழிகாட்டல்">
+        Balanced guidance for life decisions
+      </h2>
+    </div>
+
+    <div class="card pad reveal">
+      <h3 data-en="Service overview" data-ta="சேவை விளக்கம்">Service overview</h3>
+      <p data-en="The astrology consultation uses KP System, traditional astrology, and Bhrigu Nandi Nadi methods to understand events, timing, and outcomes. The focus is on giving clear answers to practical life questions with careful analysis."
+         data-ta="KP SYSTEM, பாரம்பரிய ஜோதிடம், மற்றும் பிருகு நந்தி நாடி முறையைப் பயன்படுத்தி சம்பவங்கள், காலம், மற்றும் பலன்களை ஆய்வு செய்து, வாழ்க்கை தொடர்பான கேள்விகளுக்கு தெளிவான பதில் வழங்கப்படுகிறது.">
+        The astrology consultation uses KP System, traditional astrology, and Bhrigu Nandi Nadi methods to understand events, timing, and outcomes. The focus is on giving clear answers to practical life questions with careful analysis.
+      </p>
+      <p style="margin-top:10px"
+         data-en="The service covers education, employment, job change, promotion, foreign travel, marriage timing, health, debt resolution, home purchase, and vehicle ownership."
+         data-ta="கல்வி, வேலை, வேலை மாற்றம், உயர்வு, வெளிநாட்டு பயணம், திருமணம், நோய், கடன், மணை, வீடு, வாகனம் ஆகியவற்றுக்கான ஆலோசனை வழங்கப்படுகிறது.">
+        The service covers education, employment, job change, promotion, foreign travel, marriage timing, health, debt resolution, home purchase, and vehicle ownership.
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="Consultation Areas" data-ta="ஆலோசனை பகுதிகள்">Consultation Areas</span>
+      <h2 data-en="What the astrology service covers" data-ta="இந்த ஜோதிட சேவை எதை எதையை உள்ளடக்கியது">
+        What the astrology service covers
+      </h2>
+    </div>
+
+    <div class="highlight horary-block reveal" style="margin-bottom:18px">
+      <div class="highlight-inner">
+        <h3 data-en="Horary - Prasanna Astrology" data-ta="HORARY - பிரசன்ன ஜோதிடம்">
+          Horary - Prasanna Astrology
+        </h3>
+        <p data-en="For those who do not have birth details and need answers for one specific area such as job, love affair, marriage, or obstacles in a certain process, Horary by KP method can give accurate results."
+           data-ta="ஜாதகம் இல்லாத பட்சத்தில், குறிப்பிட்ட ஏதேனும் ஒரு கேள்விக்கு... வேலை / காதல் குறித்த வீனா / அயல்நாட்டு பயண தாமதம் தீரும் காலம் / மற்றும் ஏதேனும் ஐயம் எதுவாயினும் KP பிரசன்ன முறையில் துல்லியமான பதில் தரப்படும்.">
+          For those who do not have birth details and need answers for one specific area such as job, love affair, marriage, or obstacles in a certain process, Horary by KP method can give accurate results.
+        </p>
+        <p style="margin-top:10px"
+           data-en="In astrology, this method is especially useful when the question is clear and a direct answer is needed without a full horoscope."
+           data-ta="ஜோதக விவரம் இல்லாதபோதும், கேள்வி தெளிவாக இருந்தால் முழு ஜாதகம் இல்லாமல் நேரடியான பதில் பெற இந்த முறை மிகவும் பயன்படும்.">
+          In astrology, this method is especially useful when the question is clear and a direct answer is needed without a full horoscope.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <article class="service-card reveal" style="--bg-image:url('images/astro-education.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-graduation-cap"></i> <span data-en="Education" data-ta="கல்வி">Education</span></span>
+          <h3 data-en="Which education path suits best?" data-ta="எந்த கல்வி சரியாக அமையும்?">Which education path suits best?</h3>
+          <p data-en="Guidance on the best education direction, field, and progress potential."
+             data-ta="எந்த கல்வி, எந்த துறை, எவ்வாறு முன்னேற்றம் கிடைக்கும் என்பதில் வழிகாட்டல்.">
+            Guidance on the best education direction, field, and progress potential.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="--bg-image:url('images/astro-career.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-briefcase"></i> <span data-en="Job & Career" data-ta="வேலை & தொழில்">Job & Career</span></span>
+          <h3 data-en="Job, job change, promotion" data-ta="வேலை, மாற்றம், உயர்வு">Job, job change, promotion</h3>
+          <p data-en="Employment timing, career direction, change of job, and promotion indications."
+             data-ta="வேலை கிடைக்குமா, வேலை மாற்றமா, உயர்வா என்பதற்கான கணிப்பு.">
+            Employment timing, career direction, change of job, and promotion indications.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="--bg-image:url('images/astro-marriage.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-heart"></i> <span data-en="Marriage" data-ta="திருமணம்">Marriage</span></span>
+          <h3 data-en="When will marriage happen?" data-ta="திருமணம் எப்போது?">When will marriage happen?</h3>
+          <p data-en="Marriage prospects, timing, delay, and the likely period of occurrence."
+             data-ta="திருமணம் எப்போது, என்றைக்கு, தாமதமா அல்லது சரியான காலமா என்பதில் விளக்கம்.">
+            Marriage prospects, timing, delay, and the likely period of occurrence.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="--bg-image:url('images/astro-travel.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-plane-departure"></i> <span data-en="Foreign Travel" data-ta="வெளிநாட்டு பயணம்">Foreign Travel</span></span>
+          <h3 data-en="Will foreign travel happen?" data-ta="வெளிநாட்டு பயணம் உண்டா?">Will foreign travel happen?</h3>
+          <p data-en="Whether foreign travel is likely and when the opportunity may come."
+             data-ta="வெளிநாட்டு பயணம் உண்டா? எப்பொழுது? என்ற கேள்விக்கு கணிப்பு.">
+            Whether foreign travel is likely and when the opportunity may come.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="--bg-image:url('images/astro-house.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-house"></i> <span data-en="House / Vehicle" data-ta="மண் / வீடு / வாகனம்">House / Vehicle</span></span>
+          <h3 data-en="When will property be acquired?" data-ta="எப்போது அமையும்?">When will property be acquired?</h3>
+          <p data-en="Timing for land, home, and vehicle ownership with clear analysis."
+             data-ta="மண், வீடு, வாகனம் எப்போது அமையும் என்பதற்கான கணிப்பு.">
+            Timing for land, home, and vehicle ownership with clear analysis.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="--bg-image:url('images/astro-horoscope.jpg')">
+        <div class="service-content">
+          <span class="service-chip"><i class="fa-solid fa-file-lines"></i> <span data-en="Horoscope" data-ta="ஜாதகம்">Horoscope</span></span>
+          <h3 data-en="Written horoscope and computer chart" data-ta="எழுதிய ஜாதகம் மற்றும் கம்ப்யூட்டர் ஜாதகம்">
+            Written horoscope and computer chart
+          </h3>
+          <p data-en="Horoscope analysis can be written and given clearly, including computer-based charts."
+             data-ta="ஜாதகம் கணித்து எழுதி தரப்படும். கம்ப்யூட்டர் ஜாதகமும் கணித்து தரப்படும்.">
+            Horoscope analysis can be written and given clearly, including computer-based charts.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="methods">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="Methods" data-ta="முறைகள்">Methods</span>
+      <h2 data-en="Systems used in the consultation" data-ta="ஆலோசனையில் பயன்படுத்தப்படும் முறைகள்">
+        Systems used in the consultation
+      </h2>
+    </div>
+
+    <div class="highlight reveal">
+      <h3 data-en="Analysis style" data-ta="ஆய்வு முறை">Analysis style</h3>
+      <p data-en="The consultation uses KP System, traditional astrology, and Bhrigu Nandi Nadi methodology for accurate research and timing analysis."
+         data-ta="KP SYSTEM, பாரம்பரிய ஜோதிடம், மற்றும் பிருகு நந்தி நாடி முறையைப் பயன்படுத்தி துல்லியமான ஆய்வு மற்றும் காலக் கணிப்பு செய்யப்படுகிறது.">
+        The consultation uses KP System, traditional astrology, and Bhrigu Nandi Nadi methodology for accurate research and timing analysis.
+      </p>
+      <p data-en="துல்லியமான ஆய்வு - உறுதியான பலன் கூறும் முறை. சம்பவம் நடைபெறுமா? நடைபெறும் எனில் நடைபெறும் காலம் கணித்தல்."
+         data-ta="துல்லியமான ஆய்வு - உறுதியான பலன் கூறும் முறை. சம்பவம் நடைபெறுமா? நடைபெறும் எனில் நடைபெறும் காலம் கணித்தல்.">
+        துல்லியமான ஆய்வு - உறுதியான பலன் கூறும் முறை. சம்பவம் நடைபெறுமா? நடைபெறும் எனில் நடைபெறும் காலம் கணித்தல்.
+      </p>
+      <ul>
+        <li data-en="KP System analysis" data-ta="KP SYSTEM ஆய்வு">KP System analysis</li>
+        <li data-en="Traditional astrology guidance" data-ta="பாரம்பரிய ஜோதிடம்">Traditional astrology guidance</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="deliverables">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="Deliverables" data-ta="வழங்கப்படும் விவரங்கள்">Deliverables</span>
+      <h2 data-en="What the client receives" data-ta="வாடிக்கையாளர் பெறுவது என்ன?">What the client receives</h2>
+    </div>
+
+    <div class="card pad reveal">
+      <h3 data-en="Report format" data-ta="அறிக்கை வடிவம்">Report format</h3>
+      <p data-en="The horoscope is analyzed carefully and presented in a clear format. The service helps answer key life questions such as career, marriage, travel, property, health, and timing of events."
+         data-ta="ஜாதகம் கணித்து தெளிவாக வழங்கப்படும். career, marriage, travel, property, health, timing போன்ற முக்கிய கேள்விகளுக்குப் பதில் கிடைக்கும்.">
+        The horoscope is analyzed carefully and presented in a clear format. The service helps answer key life questions such as career, marriage, travel, property, health, and timing of events.
+      </p>
+      <p style="margin-top:10px"
+         data-en="A horoscope can be written and given clearly including computer-based charts."
+         data-ta="கணினி அடிப்படையிலான ஜாதக வரைபடங்களுடன், ஜாதகம் தெளிவாக எழுதப்பட்டு வழங்கப்படும்.">
+        A horoscope can be written and given clearly including computer-based charts.
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-en="Contact" data-ta="தொடர்பு">Contact</span>
+      <h2 data-en="Book the consultation" data-ta="ஆலோசனை பதிவு">Book the consultation</h2>
+      <p data-en="Use the contact details below to reach the astrologer."
+         data-ta="கீழே உள்ள தொடர்பு விவரங்களின் மூலம் ஜோதிட ஆலோசனைக்கு தொடர்பு கொள்ளலாம்.">
+        Use the contact details below to reach the astrologer.
+      </p>
+    </div>
+
+    <div class="footer-contact reveal">
+      <article class="contact-card">
+        <h3 data-en="Contact details" data-ta="தொடர்பு விவரங்கள்">Contact details</h3>
+        <div class="contact-row">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+918940960728">8940960728</a>
+        </div>
+        <div class="contact-row">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/918940960728" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-en="Kelambakkam, Chennai" data-ta="கேளம்பாக்கம், சென்னை">Kelambakkam, Chennai</span>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:saiacu24@gmail.com">saiacu24@gmail.com</a>
+        </div>
+      </article>
+
+      <article class="map-card">
+        <iframe
+          title="Sai Acupuncture Center map"
+          src="https://www.google.com/maps?q=No.40%2C%20Renugambal%20Nagar%2C%20Opposite%20Sai%20Baba%20Temple%2C%20OMR%2C%20Kelambakkam%2C%20Chennai%20603103&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </article>
+    </div>
+  </section>
+</main>
+
+<a class="floating-whatsapp" href="https://wa.me/918940960728" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer class="footer">
+  <div class="container">
+    <p data-en="© 2026 Astrology Consultation • T. Palani M.A. (Astro)"
+       data-ta="© 2026 ஜோதிட ஆலோசனை • T. Palani M.A. (Astro)">
+      © 2026 Astrology Consultation • T. Palani M.A. (Astro)
+    </p>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(el => observer.observe(el));
+
+  const langButtons = document.querySelectorAll('.lang-btn');
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    langButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const value = el.getAttribute(`data-${lang}`);
+      if (value !== null) el.textContent = value;
+    });
+
+    document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+      const value = el.getAttribute(`data-${lang}-placeholder`);
+      if (value !== null) el.setAttribute('placeholder', value);
+    });
+  }
+
+  window.setLang = setLang;
+  setLang('en');
+</script>
+</body>
+</html>

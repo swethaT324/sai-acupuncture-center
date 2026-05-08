@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Sai Acupuncture Center offers professional acupuncture healing and astrology consultation in Chennai.">
+
+  <meta property="og:title" content="Sai Acupuncture Center">
+  <meta property="og:description" content="Professional acupuncture healing and astrology consultation in Chennai.">
+  <meta property="og:image" content="https://saiacupuncture.com/images/preview.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Acupuncture Center — acupuncture care for pain relief, chronic disorders, wellness, and holistic healing." />
+  <title>Sai Acupuncture Center</title>
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="/images/favicon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="Sai Acupuncture Center home">
+      <img src="images/sai.jpg" alt="Sai logo" class="brand-logo" />
+      <span class="brand-text">Sai Acupuncture Center</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-en="About" data-ta="அறிமுகம்">About</a>
+      <a href="#procedure" data-en="Procedure" data-ta="சிகிச்சை முறை">Procedure</a>
+      <a href="#services" data-en="Services" data-ta="சேவைகள்">Services</a>
+      <a href="#doctor" data-en="Healer" data-ta="மருத்துவர்">Healer</a>
+      <a href="#reviews" data-en="Reviews" data-ta="விமர்சனங்கள்">Reviews</a>
+      <a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switcher">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="ta" onclick="setLang('ta')">தமிழ்</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg active" id="bg1"></div>
+      <div class="hero-bg" id="bg2"></div>
+      <div class="hero-bg" id="bg3"></div>
+      <div class="hero-bg" id="bg4"></div>
+      <div class="hero-bg" id="bg5"></div>
+      <div class="hero-bg" id="bg6"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <div class="hero-badge" data-en="Traditional • Holistic • Gentle Cure" data-ta="பாரம்பரிய • முழுமையான • மென்மையான குணமாக்கல்">
+          Traditional • Holistic • Gentle Cure
+        </div>
+
+        <img src="images/sai.jpg" alt="Sai Baba" class="hero-icon" />
+
+        <h1 data-en="Sai Acupuncture Center" data-ta="சாய் அகுபங்சர் மையம்">Sai Acupuncture Center</h1>
+
+        <p class="hero-subtitle" data-en="For All Pains & Chronic Disorders" data-ta="அனைத்து வலிகள் மற்றும் நீண்டகால நோய்களுக்கு">
+          For All Pains & Chronic Disorders
+        </p>
+
+        <p class="hero-timing" data-en="Timings: 9:30 AM - 6:30 PM" data-ta="நேரம்: காலை 9:30 - மாலை 6:30">
+          Timings: 9:30 AM - 6:30 PM
+        </p>
+
+        <p class="hero-description"
+           data-en="Focused on restoring balance, easing discomfort, and supporting the body’s natural healing process."
+           data-ta="உடலின் சமநிலையை மீட்டெடுத்து, வலியை குறைத்து, இயற்கையான குணமடையும் செயல்முறையை ஆதரிக்கும் ஒரு தொழில்முறை அகுபங்சர் மையம்.">
+          Focused on restoring balance, easing discomfort, and supporting the body’s natural healing process.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+918940960728">
+            <i class="fa-solid fa-phone"></i>
+            <span data-en="Call Now" data-ta="இப்போது அழைக்கவும்">Call Now</span>
+          </a>
+          <a class="btn btn-secondary" href="astrology.html">
+            <i class="fa-solid fa-star"></i>
+            <span data-en="Sai Astrologicaal Solutions" data-ta="சாய் ஜோதிட தீர்வுகள்">Sai Astrologicaal Solutions</span>
+          </a>
+          <a class="btn btn-secondary" href="#contact">
+            <i class="fa-solid fa-location-dot"></i>
+            <span data-en="Visit the healing center" data-ta="சிகிச்சை மையத்தை பார்வையிடுங்கள்">Visit the healing center</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt about-section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="About Acupuncture" data-ta="அகுபங்சர் பற்றி">About Acupuncture</span>
+          <h2 data-en="Balance the body. Support healing. Restore comfort." data-ta="உடலை சமநிலைப்படுத்தி, குணமடைய உதவி செய்து, நிம்மதியை மீட்டெடுக்கவும்.">
+            Balance the body. Support healing. Restore comfort.
+          </h2>
+          <p data-en="Acupuncture is a holistic healing technique that uses very fine needles at specific points on the body to influence the flow of energy, support recovery, and reduce pain."
+             data-ta="அகுபங்சர் என்பது உடலில் உள்ள குறிப்பிட்ட புள்ளிகளில் மிக மெல்லிய ஊசிகளை வைத்து, ஆற்றல் ஓட்டத்தை சமநிலைப்படுத்தி, குணமடைய உதவி செய்து, வலியை குறைக்கும் ஒரு முழுமையான சிகிச்சை முறை.">
+            Acupuncture is a holistic healing technique that uses very fine needles at specific points on the body to influence the flow of energy, support recovery, and reduce pain.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3 data-en="What acupuncture is" data-ta="அகுபங்சர் என்றால் என்ன">What acupuncture is</h3>
+            <p data-en="Acupuncture is a healing technique in which practitioners insert fine needles at points located on meridians. These meridians are understood as channels that carry Qi (Chi), the vital life energy. When this flow becomes imbalanced, pain, discomfort, and illness may appear."
+               data-ta="அகுபங்சரில், உடலின் மெரிடியன் எனப்படும் ஆற்றல் பாதைகளில் மெல்லிய ஊசிகள் வைக்கப்படுகின்றன. இந்த பாதைகள் Qi (Chi) எனப்படும் உயிர் ஆற்றலை எடுத்துச் செல்வதாக கருதப்படுகிறது. இந்த ஓட்டம் சமநிலையிலிருந்து விலகும் போது வலி, அசௌகரியம், மற்றும் நோய் தோன்றலாம்.">
+              Acupuncture is a healing technique in which practitioners insert fine needles at points located on meridians. These meridians are understood as channels that carry Qi (Chi), the vital life energy. When this flow becomes imbalanced, pain, discomfort, and illness may appear.
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3 data-en="Where it comes from" data-ta="இதன் தோற்றம்">Where it comes from</h3>
+            <p data-en="This practice originated from China and has been used for at least 2,500 years in different styles and forms. According to the World Health Organization, acupuncture is used in many countries around the world, showing its wide acceptance and relevance."
+               data-ta="இந்த சிகிச்சை China Medicine இலிருந்து உருவானது. இது குறைந்தது 2500 ஆண்டுகளாக பல வடிவங்களில் பயன்படுத்தப்பட்டு வருகிறது. உலக சுகாதார அமைப்பின் தகவல்படி, அகுபங்சர் பல நாடுகளில் பயன்படுத்தப்படுகிறது.">
+              This practice originated from China and has been used for at least 2,500 years in different styles and forms. According to the World Health Organization, acupuncture is used in many countries around the world, showing its wide acceptance and relevance.
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3 data-en="Five elements concept" data-ta="ஐந்து கூறுகள் கோட்பாடு">Five elements concept</h3>
+            <p data-en="Traditional China medicine explains health through balance among the five elements: Fire, Earth, Metal, Water and Wood. Each element is linked to specific functions within the body. When aligned properly, the body can feel more balanced, calm, and healthy."
+               data-ta="பாரம்பரிய சீன மருத்துவம் உடல் நலத்தை நெருப்பு, மண், உலோகம், நீர் மற்றும் மரம் என்ற ஐந்து கூறுகளின் சமநிலையாக விளக்குகிறது. ஒவ்வொரு கூறும் உடலின் குறிப்பிட்ட செயல்களுடன் தொடர்புடையது. அவை சரியாக சமநிலைப்படுத்தப்பட்டால் உடல் நலமாகவும் அமைதியாகவும் இருக்கும்.">
+              Traditional China medicine explains health through balance among the five elements: Fire, Earth, Metal, Water, Wood. Each element is linked to specific functions within the body. When aligned properly, the body can feel more balanced, calm, and healthy.
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3 data-en="How it helps" data-ta="எப்படி உதவுகிறது">How it helps</h3>
+            <p data-en="Acupuncture aims to optimize energy flow, restore harmony, and reduce health risks. By adjusting imbalances in Qi, it may help support pain relief, relaxation, better circulation, and the body’s own healing response."
+               data-ta="அகுபங்சர் ஆற்றல் ஓட்டத்தை மேம்படுத்தி, சமநிலையை மீட்டெடுத்து, நோய் அபாயத்தை குறைப்பதை நோக்கமாகக் கொண்டுள்ளது. Qi சமநிலையின்மையை சரிசெய்வதன் மூலம் வலி குறைப்பு, தளர்ச்சி, இரத்த ஓட்டம் மேம்பாடு, மற்றும் இயற்கையான குணமடையும் செயல்பாடு ஆகியவற்றை ஆதரிக்கலாம்.">
+              Acupuncture aims to optimize energy flow, restore harmony, and reduce health risks. By adjusting imbalances in Qi, it may help support pain relief, relaxation, better circulation, and the body’s own healing response.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="procedure">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Procedure" data-ta="சிகிச்சை முறை">Procedure</span>
+          <h2 data-en="A clear and comfortable Healing process" data-ta="தெளிவான மற்றும் நிம்மதியான குணமடையும் செயல்பாடு">
+            A clear and comfortable Healing process
+          </h2>
+          <p data-en="The Healing experience is explained step by step so patients know what to expect before treatment begins."
+             data-ta="சிகிச்சை தொடங்குவதற்கு முன் என்ன நடக்கப்போகிறது என்பதை நோயாளிகள் அறிந்துகொள்ளும் வகையில் ஒவ்வொரு படியும் விளக்கப்படுகிறது.">
+            The Healing experience is explained step by step so patients know what to expect before treatment begins.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3 data-en="1. Consultation" data-ta="1. ஆலோசனை">1. Consultation</h3>
+            <p data-en="The Healer listens to the patient’s symptoms, health history, lifestyle, and current concerns."
+               data-ta="குணமாக்கல் நிபுணர் நோயாளியின் அறிகுறிகள், உடல்நல வரலாறு, வாழ்க்கை முறை, மற்றும் தற்போதைய பிரச்சினைகளை கவனமாகக் கேட்கிறார்.">
+              The Healer listens to the patient’s symptoms, health history, lifestyle, and current concerns.
+            </p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3 data-en="2. Assessment" data-ta="2. மதிப்பீடு">2. Assessment</h3>
+            <p data-en="The condition is assessed to understand where imbalance, pain, or discomfort may be affecting the body."
+               data-ta="உடலின் எந்த பகுதியில் சமநிலையின்மை, வலி, அல்லது அசௌகரியம் இருக்கிறது என்பதை அறிய மதிப்பீடு செய்யப்படுகிறது.">
+              The condition is assessed to understand where imbalance, pain, or discomfort may be affecting the body.
+            </p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+            <h3 data-en="3. Needle placement" data-ta="3. ஊசி வைப்பது">3. Needle placement</h3>
+            <p data-en="Very fine sterile needles are gently placed at selected acupuncture points by a trained practitioner."
+               data-ta="திறமை பெற்ற நிபுணரால் மிகவும் மெல்லிய, கிருமி இல்லாத ஊசிகள் தேர்ந்தெடுக்கப்பட்ட புள்ளிகளில் மெதுவாக வைக்கப்படுகின்றன.">
+              Very fine sterile needles are gently placed at selected acupuncture points by a trained practitioner.
+            </p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-icon"><i class="fa-solid fa-spa"></i></div>
+            <h3 data-en="4. Therapy session" data-ta="4. சிகிச்சை அமர்வு">4. Therapy session</h3>
+            <p data-en="The patient rests while the treatment supports relaxation, balance, and natural healing responses."
+               data-ta="நோயாளி ஓய்வெடுக்கும்போது சிகிச்சை தளர்ச்சி, சமநிலை, மற்றும் இயற்கையான குணமடையும் செயல்பாட்டை ஆதரிக்கிறது.">
+              The patient rests while the treatment supports relaxation, balance, and natural healing responses.
+            </p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <h3 data-en="5. Follow-up" data-ta="5. பின்தொடர் பராமரிப்பு">5. Follow-up</h3>
+            <p data-en="Depending on the condition, the Healer may recommend repeat visits or additional care guidance."
+               data-ta="நோயின் தன்மைக்கு ஏற்ப மறுபடி வருகை அல்லது கூடுதல் பராமரிப்பு ஆலோசனை வழங்கப்படலாம்.">
+              Depending on the condition, the Healer may recommend repeat visits or additional care guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="What we do" data-ta="நாங்கள் என்ன செய்கிறோம்">What we do </span>
+          <h2 data-en="Specialized care for common pain and health concerns" data-ta="பொதுவான வலி மற்றும் உடல்நல பிரச்சினைகளுக்கான சிறப்பு பராமரிப்பு">
+            Specialized care for common pain and health concerns
+          </h2>
+        </div>
+
+        <div class="service-list-card reveal" aria-labelledby="serviceListTitle">
+          <div class="service-list-head">
+            <div>
+              <span class="eyebrow" data-en="All Services" data-ta="அனைத்து சேவைகள்">All Services</span>
+              <h3 id="serviceListTitle" data-en="Treatment list" data-ta="சிகிச்சை பட்டியல்">Treatment list</h3>
+            </div>
+            <p data-en="A quick view of the treatments available at Sai Acupuncture Center."
+               data-ta="சாய் அகுபங்சர் மையத்தில் வழங்கப்படும் சிகிச்சைகளின் விரைவான பட்டியல்.">
+              A quick view of the treatments available at Sai Acupuncture Center.
+            </p>
+          </div>
+          <div class="service-list" id="serviceList"></div>
+        </div>
+
+        <div class="service-showcase reveal">
+          <button class="service-arrow" id="servicePrev" aria-label="Previous treatment">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <article class="service-spotlight" id="serviceSpotlight">
+            <div class="service-media">
+              <img id="serviceImage" src="images/joint.jpg" alt="Treatment image" />
+            </div>
+
+            <div class="service-copy">
+              <div class="service-meta">
+                <span class="service-index" id="serviceIndex">01</span>
+                <span class="service-chip" data-en="Featured Treatment" data-ta="சிறப்பு சிகிச்சை">Featured Treatment</span>
+              </div>
+              <h3 id="serviceTitle">Joint Pain</h3>
+              <p id="serviceText">Support for stiffness, inflammation, and pain in joints.</p>
+              <div class="service-bars" id="serviceBars" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <button class="service-arrow" id="serviceNext" aria-label="Next treatment">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="doctor">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Healer" data-ta="மருத்துவர்">Healer</span>
+          <h2 data-en="Trusted Healing guidance" data-ta="நம்பகமான சிகிச்சை வழிகாட்டல்">Trusted Healing guidance</h2>
+        </div>
+
+        <div class="doctor-wrap reveal">
+          <div class="doctor-photo">
+            <img src="images/doctor.jpg" alt="Doctor" />
+          </div>
+          <div class="doctor-content">
+            <h3 data-en="T. Palani" data-ta="டி. பழனி">T. Palani</h3>
+            <p class="doctor-role" data-en="Senior Consultant Acupuncturist" data-ta="முனைவர் ஆலோசகர் அகுபங்சர் நிபுணர்">Senior Consultant Acupuncturist</p>
+            <p data-en="Qualifications: D.Acu, M.Acu, M.D (Acu)" data-ta="தகுதிகள்: D.Acu, M.Acu, M.D (Acu)">Qualifications: D.Acu, M.Acu, M.D (Acu)</p>
+            <p data-en="The Healer focuses on careful assessment, calm communication, and personalized acupuncture sessions based on the patient’s condition and comfort."
+               data-ta="மருத்துவர் கவனமான மதிப்பீடு, அமைதியான உரையாடல், மற்றும் நோயாளியின் நிலை மற்றும் நிம்மதியைப் பொருத்த தனிப்பயன் அகுபங்சர் அமர்வுகளை கவனமாக வழங்குகிறார்.">
+              The Healer focuses on careful assessment, calm communication, and personalized acupuncture sessions based on the patient’s condition and comfort.
+            </p>
+
+            <div class="astro-callout">
+              <p
+                data-en="Also offers astrology consultation based on KP System and traditional methods."
+                data-ta="KP SYSTEM மற்றும் பாரம்பரிய முறைகளின் அடிப்படையில் ஜோதிட ஆலோசனையும் வழங்கப்படுகிறது.">
+                Also offers astrology consultation based on KP System and traditional methods.
+              </p>
+
+              <a class="btn btn-secondary astro-btn" href="astrology.html">
+                <i class="fa-solid fa-star"></i>
+                <span data-en="View Astrology Services" data-ta="ஜோதிட சேவைகளைப் பார்க்க">View Astrology Services</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Reviews" data-ta="விமர்சனங்கள்">Reviews</span>
+          <h2 data-en="Patient feedback" data-ta="நோயாளிகளின் கருத்துகள்">Patient feedback</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-tools">
+            <form class="review-form glass-card reveal" onsubmit="addReview(event)">
+              <h3 data-en="Write a review" data-ta="விமர்சனம் எழுதவும்">Write a review</h3>
+
+              <input id="reviewName" type="text" placeholder="Your name" data-en-placeholder="Your name" data-ta-placeholder="உங்கள் பெயர்" required />
+
+              <div class="star-input" aria-label="Select rating">
+                <button type="button" data-rating="1" onclick="setRating(1)">★</button>
+                <button type="button" data-rating="2" onclick="setRating(2)">★</button>
+                <button type="button" data-rating="3" onclick="setRating(3)">★</button>
+                <button type="button" data-rating="4" onclick="setRating(4)">★</button>
+                <button type="button" data-rating="5" onclick="setRating(5)">★</button>
+              </div>
+
+              <textarea id="reviewText" rows="5" placeholder="Share your experience" data-en-placeholder="Share your experience" data-ta-placeholder="உங்கள் அனுபவத்தை பகிரவும்" required></textarea>
+
+              <button class="btn btn-primary btn-full" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span data-en="Submit Review" data-ta="விமர்சனத்தை சமர்ப்பிக்கவும்">Submit Review</span>
+              </button>
+            </form>
+
+            <section class="admin-card glass-card reveal">
+              <h3 data-en="Admin Panel" data-ta="நிர்வாகப் பகுதி">Admin Panel</h3>
+
+              <div id="adminLoggedOut" class="admin-auth">
+                <input id="adminEmail" type="email" placeholder="Admin email" />
+                <input id="adminPassword" type="password" placeholder="Admin password" />
+                <button class="btn btn-primary btn-full" type="button" id="adminLoginBtn">
+                  <i class="fa-solid fa-right-to-bracket"></i>
+                  <span data-en="Login as Admin" data-ta="நிர்வாகியாக உள்நுழை">Login as Admin</span>
+                </button>
+                <p class="admin-login-note">Static site demo login for managing local reviews.</p>
+              </div>
+
+              <div id="adminLoggedIn" class="admin-status hidden">
+                <p id="adminStatusText">Logged in.</p>
+                <button class="btn btn-secondary btn-full" type="button" id="adminLogoutBtn">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span data-en="Logout" data-ta="வெளியேறு">Logout</span>
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <div class="review-list" id="reviewList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-en="Contact" data-ta="தொடர்பு">Contact</span>
+          <h2 data-en="Visit the Healing center" data-ta="மருத்துவ சிகிச்சை மையத்தை பார்வையிடுங்கள்">Visit the Healing center</h2>
+        </div>
+
+        <div class="contact-grid reveal">
+          <article class="contact-card glass-card">
+            <h3 data-en="Center details" data-ta="மைய விவரங்கள்">Center details</h3>
+            <div class="contact-row">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+918940960728">8940960728</a>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:saiacu24@gmail.com">saiacu24@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span
+                data-en="No.40, Renugambal Nagar, Opposite Sai Baba Temple, OMR, Kelambakkam - 603103"
+                data-ta="எண்.40, ரேணுகாம்பாள் நகர், சாய் பாபா கோவில் எதிரில், OMR, கேளம்பாக்கம் - 603103">
+                No.40, Renugambal Nagar, Opposite Sai Baba Temple, OMR, Kelambakkam - 603103
+              </span>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-clock"></i>
+              <span data-en="Timings: 9:30 AM - 6:30 PM" data-ta="நேரம்: காலை 9:30 - மாலை 6:30">
+                Timings: 9:30 AM - 6:30 PM
+              </span>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span data-en="Consultation with Prior Appointment" data-ta="முன் நேரம் பதிவு செய்த பின் ஆலோசனை">
+                Consultation with Prior Appointment
+              </span>
+            </div>
+
+            <div class="hero-actions contact-actions">
+              <a class="btn btn-primary" href="tel:+918940960728">
+                <i class="fa-solid fa-phone"></i>
+                <span data-en="Call the Healer" data-ta="அழைக்கவும்">Call the Healer</span>
+              </a>
+              <a class="btn btn-secondary contact-whatsapp" href="https://wa.me/918940960728" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-en="WhatsApp" data-ta="வாட்ஸ்அப்">WhatsApp</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="map-card glass-card">
+            <iframe
+              title="Sai Acupuncture Center map"
+              src="https://www.google.com/maps?q=No.40%2C%20Renugambal%20Nagar%2C%20Opposite%20Sai%20Baba%20Temple%2C%20OMR%2C%20Kelambakkam%2C%20Chennai%20603103&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="https://wa.me/918940960728" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-en="© 2026 Sai Acupuncture Center. All rights reserved." data-ta="© 2026 சாய் அகுபங்சர் மையம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.">
+        © 2026 Sai Acupuncture Center. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
